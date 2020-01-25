@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DOB"
+                android:textSize="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:id="@+id/t1"/>
+
+            <DatePicker
+                android:layout_below="@+id/t1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:id="@+id/cal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="To"
+                android:textSize="40dp"
+                android:layout_below="@+id/cal"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/t2"/>
+
+            <DatePicker
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/cal2"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/t2"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Calculate"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/cal2"
+                android:layout_marginTop="30dp"
+                android:textSize="30dp"
+                android:id="@+id/b1"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/res"
+                android:text="Age"
+                android:layout_below="@+id/b1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:textSize="30dp"
+
+
+                />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
